@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-ybsb
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/jhutar-tenant/my-app/devfile-sample-ybsb@sha256:5a2aaf310b5f5b0fb48b32505da3a8f5a5906d5de23e3c2e09262951bb2b9417
+        name: my-nodejs
+        resources: {}
+status: {}
